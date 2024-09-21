@@ -5,7 +5,7 @@ const contentDiv = document.getElementById('content');
 
 async function fetchArticle() {
     try {
-        const response = await fetch(`http://ani-night.online/api/v2/read/${urlslug}`);
+        const response = await fetch(`https://ani-night.online/api/v2/read/${urlslug}`);
         const data = await response.json();
 
         if (!response.ok) {
@@ -54,7 +54,7 @@ function getImageUrl(image) {
     if (typeof image === 'string' && (image.startsWith('http') || image.startsWith('https'))) {
         return image;
     } else {
-        return `http://ani-night.online/uploads/thumbnails/${image || 'https://via.placeholder.com/800x400'}`;
+        return `https://ani-night.online/uploads/thumbnails/${image || 'https://via.placeholder.com/800x400'}`;
     }
 }
 
@@ -62,6 +62,6 @@ function getImageUrlProfile(image) {
     if (typeof image === 'string' && (image.startsWith('http') || image.startsWith('https'))) {
         return image;
     } else {
-        return `http://ani-night.online/uploads/profiles/${image || 'https://via.placeholder.com/800x400'}`;
+        return `https://ani-night.online/uploads/profiles/${image || 'https://via.placeholder.com/800x400'}`;
     }
 }
