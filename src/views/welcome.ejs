@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subdomain: Content Reader</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/df26bd9708.js" crossorigin="anonymous"></script>
+</head>
+<body class="bg-gray-100 text-gray-900">
+    <!-- Header Section -->
+    <header class="bg-gray-800 text-white p-6">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-3xl font-bold"><i class="fas fa-book-reader"></i> Content Reader</h1>
+            <a href="https://ani-night.online" target="_blank" class="text-lg font-semibold hover:underline">
+                กลับไปยังเว็บไซต์หลัก
+            </a>
+        </div>
+    </header>
+
+    <!-- Main Content Section -->
+    <main class="container mx-auto mt-12 h-screen text-center">
+        <section class="bg-white shadow-lg rounded-lg p-8 max-w-2xl mx-auto">
+            <i class="fas fa-exclamation-triangle text-yellow-500 text-5xl mb-4"></i>
+            <h2 class="text-2xl font-semibold mb-4">เนื้อหาสำหรับการอ่าน</h2>
+            <p class="text-lg text-gray-700 leading-relaxed mb-6">
+                หน้านี้เป็นเพียงหน้าแสดงเนื้อหาอ่านเท่านั้น หากคุณต้องการดูเนื้อหาเต็มหรือสำรวจข้อมูลเพิ่มเติม
+                คุณสามารถไปยังเว็บไซต์หลักของเราได้
+            </p>
+
+            <a href="https://ani-night.online" target="_blank" class="bg-blue-600 text-white px-6 py-3 rounded-lg shadow-lg hover:bg-blue-700 transition-colors">
+                <i class="fas fa-arrow-right"></i> ไปที่เว็บไซต์หลัก
+            </a>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+   <%- include('./components/Footer') %>
+</body>
+</html>
